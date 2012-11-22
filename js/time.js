@@ -1,6 +1,20 @@
 //wait for page to load
 $(document).ready(function(){
 
+//populate day drop down
+$(function() {
+    for(var i = 1; i <= 31; i++) {
+        $("#select-choice-day").append("<option value='" + i + "'>" + i + "</option>");
+    }        
+});
+
+//populate year drop down
+$(function() {
+    for(var i = 2012; i >= 1889; i--) {
+        $("#select-choice-year").append("<option value='" + i + "'>" + i + "</option>");
+    }        
+});
+
 //get user inputs and save to variables on button click
 $("#btngo").click(function(){
 
