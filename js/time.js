@@ -27,11 +27,11 @@ $("#btngo").click(function(){
 //check to make sure birthday is valid
 if (day ==0 || month==0 || year==0){
 //error
-$("#display").html("Please enter a valid birthday.");
+$("#display").html("Please enter a valid date of birth.");
 }
 else
 {
-//check that a valid age has been chosed/entered
+//check that a valid age has been chosen/entered
 if (age >= 1 && age <= 123)
 {  
   //join the individual parts together to create a date
@@ -67,21 +67,14 @@ if (age >= 1 && age <= 123)
   var myDatee = (Math.ceil(total / 60 / 60 / 24));
   
   //if number is negative then error!
-  //if number is 1 then singular not plural
   
   if (myDatee < 0)
  {
- $("#display").html("Trying to go back in time McFly?  You're " + years + " already!");
- }
- else if (myDatee == 0) //*****need to ignore year for this to work!!****
- {
- $("#subtext").html("Happy Birthday!");
+ $("#display").html("Trying to go back in time McFly?  You're " + years + " years old already!");
  }
  else
  {
-  $("#display").html(myDatee + " days until you're " + age);
-  //nested if
-  if (myDatee < 800){$("#quote").html("Time to make a bucket list?");}else{}
+  $("#display").html(myDatee + " days until you're " + age + " years old."); 
  }
  }
  else
@@ -90,5 +83,4 @@ if (age >= 1 && age <= 123)
  }
  }
 });
-
 });
