@@ -12,8 +12,6 @@ I created this application as an opportunity to learn more about:
 * Git & GitHub
 * PhoneGap & publishing to the play store
 
-For the last few months I have been working on other projects, I now intend to make some improvements based on the feedback from users.
-
 #### App description (taken from listing on play store):
 
 >Want to know how many days until your next birthday?  How about how many days until your 30th or 70th birthday?  
