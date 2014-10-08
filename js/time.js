@@ -5,8 +5,9 @@ $(function () {
     }
 
     //populate year drop down
-
-    for (var i = 2012; i >= 1889; i--) {
+    var today = new Date();
+    var year  = today.getFullYear();
+    for (var i = year; i >= 1889; i--) {
         $("#select-choice-year").append("<option value='" + i + "'>" + i + "</option>");
     }
 
@@ -39,7 +40,7 @@ $(function () {
 
     //get user inputs and save to variables on button click
     $(document).on('click', '#btngo', function () {
-    
+        $('#result').show();
         storage.setItem("saved_day", $("#select-choice-day").val());
 		storage.setItem("saved_month", $("#select-choice-month").val());
 		storage.setItem("saved_year", $("#select-choice-year").val());
@@ -93,7 +94,7 @@ $(function () {
                 //if number is negative then error!
     
                 if (myDatee < 0) {
-                    $("#display").html("Trying to go back in time McFly?  You're " + years + " years old already!");
+                    $("#display").html("Trying to go back in time McFly?<br />You're " + years + " years old already!");
                 } else {
                     $("#display").html(myDatee + " days until you're " + age + " years old.");
                 }

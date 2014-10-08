@@ -1,9 +1,49 @@
-.ui-header .ui-title,.ui-footer .ui-title
-{
-margin:.6em 0% .8em
+.ui-header .ui-title,.ui-footer .ui-title {
+  margin:.6em 0% .8em;
 }
 
-.ui-br
-{
-border-bottom-style:none
+.ui-content {
+  padding-top: 0;
+}
+
+.ui-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ui-field-contain .ui-controlgroup-controls {
+  width: 100%;
+}
+
+.ui-select {
+  width: 33.3%;
+}
+
+.ui-controlgroup-controls .ui-select, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-corner-all, .ui-slider-handle {
+  border-radius: 0px;
+}
+
+.ui-shadow, .ui-shadow-inset {
+  box-shadow: none;
+}
+
+.ui-slider-track {
+  margin-right: 0;
+}
+
+.ui-field-contain {
+  border-bottom: 0px;
+}
+
+.ui-content p {
+  font-style: italic;
+}
+
+#btngo {
+  font-size: 1.5em;
+}
+
+#result {
+  display: none;
+  text-align: center;
 }

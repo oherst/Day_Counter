@@ -2,35 +2,29 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Days until my Birthday</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Days until my Birthday</title>
 	<link rel="stylesheet" href="jqm\jquery.mobile-1.4.4.min.css" />
 	<link rel="stylesheet" href="jqm\mystyle.css" />
 	<script src="jqm\jquery-2.1.1.min.js"></script>
 	<script src="jqm\jquery.mobile-1.4.4.min.js"></script>
-	<script src="js\time.js"></script>	
+	<script src="js\time.js"></script>
 </head>
-<body> 
-
+<body>
 		<div data-role="page" data-theme="a">
-			<!--header-->
-		<div data-role="header" data-theme="a">
-			<h2>Days until my Birthday</h2>
+		<div data-role="header">
+			<h1>Days until my Birthday</h1>
 		</div>
-			<div data-role="content">	
-			<p>Want to know how many days until your next birthday?  How about how many days until your 30th or 70th birthday?  
-			<br />
-			<br />
-			To find out, fill in your details and press Go!</p>		
-				<br />			
+			<div data-role="content">
+	<div class="ui-body ui-body-a ui-corner-all">
+			<h2>Step 1.  Enter date of birth:</h2>
+			<p>(Example: 5 - Nov - 1955)</p>
 				<div data-role="fieldcontain">
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-					<legend>Date of Birth:</legend>
+					<fieldset data-role="controlgroup" data-type="horizontal">
 						<label for="select-choice-day">Day</label>
 						<select name="select-choice-day" id="select-choice-day">
 							<option value="">Day</option>
 						</select>
-			
 						<label for="select-choice-month">Month</label>
 							<select name="select-choice-month" id="select-choice-month">
 								<option value="0">Month</option>
@@ -47,27 +41,25 @@
 								<option value="11">Nov</option>
 								<option value="12">Dec</option>
 							</select>
-			
 						<label for="select-choice-year">Year</label>
 							<select name="select-choice-year" id="select-choice-year">
 								<option value="">Year</option>
-							</select>           
+							</select>
 					</fieldset>
 				</div>
-				
-				<div data-role="fieldcontain">
-					<label for="age-slider">How many days until I'm:</label>
-					<input type="range" name="age-slider" id="age-slider" value="30" min="1" max="123" data-theme="a" data-track-theme="a" data-mini="true" />
-				</div>			
-				<br />
-				<br />			
-				<h3 id="display"></h3>
-				<h4 id="subtext"></h4>
-				<button id="btngo" data-mini="true">Go</button>
-			</div>			
-		<div data-role="footer" data-theme="a" data-position="fixed">
-			<!--footer-->	
-		</div>		
+			</div>
+			<div class="ui-body ui-body-a ui-corner-all">
+				<h2>Step 2.  Set desired age:</h2>
+				<label for="age-slider" class="ui-hidden-accessible">Desired Age:</label>
+				<input type="range" name="age-slider" id="age-slider" data-highlight="true" value="30" min="1" max="123">
+			</div>
+				<button id="btngo">Go</button>
+				<div class="ui-body ui-body-a ui-corner-all" id="result">
+					<h2 id="display"></h2>
+				</div>
+			</div>
+		<div data-role="footer" data-position="fixed">
+		</div>
 	</div>
 </body>
 </html>
