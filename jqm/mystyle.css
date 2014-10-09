@@ -19,7 +19,7 @@
   width: 33.3%;
 }
 
-.ui-controlgroup-controls .ui-select, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-corner-all, .ui-slider-handle {
+.ui-controlgroup-controls .ui-select, .ui-slider-track.ui-corner-all, .ui-corner-all, .ui-slider-handle {
   border-radius: 0px;
 }
 
@@ -41,6 +41,9 @@
 
 #btngo {
   font-size: 1.5em;
+  background-color: #38c;
+  border-color: #38c;
+  color: #fff;
 }
 
 #result {

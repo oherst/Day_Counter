@@ -99,7 +99,7 @@ $(function () {
                     $("#display").html(myDatee + " days until you're " + age + " years old.");
                 }
             } else {
-                $("#display").html("Please choose an age between 1 and 123");
+                $("#display").html("Please set desired age.");
             }
         }
     });
