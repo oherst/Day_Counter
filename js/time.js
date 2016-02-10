@@ -1,5 +1,12 @@
-//populate day drop down
 $(function () {
+
+  $('select').material_select();
+
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 250
+  });
+
     for (var i = 1; i <= 31; i++) {
         $("#select-choice-day").append("<option value='" + i + "'>" + i + "</option>");
     }

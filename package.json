@@ -1,0 +1,24 @@
+{
+  "name": "days_until_birthday_android_app",
+  "version": "1.0.0",
+  "description": "Android app that works out how many days between now and the users chosen age",
+  "main": "quick_server.js",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oherst/Day_Counter.git"
+  },
+  "author": "Oliver Herst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oherst/Day_Counter/issues"
+  },
+  "homepage": "https://github.com/oherst/Day_Counter#readme"
+}
